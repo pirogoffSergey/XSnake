@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30B0BA5E16AC88BF005B9431 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B0BA5D16AC88BF005B9431 /* UIKit.framework */; };
+		30B0BA6016AC88BF005B9431 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B0BA5F16AC88BF005B9431 /* Foundation.framework */; };
+		30B0BA6216AC88BF005B9431 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B0BA6116AC88BF005B9431 /* CoreGraphics.framework */; };
+		30B0BA6816AC88BF005B9431 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30B0BA6616AC88BF005B9431 /* InfoPlist.strings */; };
+		30B0BA6A16AC88BF005B9431 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0BA6916AC88BF005B9431 /* main.m */; };
+		30B0BA6E16AC88BF005B9431 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0BA6D16AC88BF005B9431 /* AppDelegate.m */; };
+		30B0BA7016AC88BF005B9431 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B0BA6F16AC88BF005B9431 /* Default.png */; };
+		30B0BA7216AC88BF005B9431 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B0BA7116AC88BF005B9431 /* Default@2x.png */; };
+		30B0BA7416AC88BF005B9431 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B0BA7316AC88BF005B9431 /* Default-568h@2x.png */; };
+		30B0BA7F16AC8995005B9431 /* XSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0BA7E16AC8995005B9431 /* XSNode.m */; };
+		30B0BA8316AC8A48005B9431 /* XSHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0BA8216AC8A48005B9431 /* XSHead.m */; };
+		30B0BA8716AC8A8A005B9431 /* XSTail.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0BA8616AC8A8A005B9431 /* XSTail.m */; };
+		30B0BA8B16AC8ACE005B9431 /* XSSnakeBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0BA8A16AC8ACE005B9431 /* XSSnakeBody.m */; };
+		30B0BA9416AC997E005B9431 /* Defines.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0BA9316AC997E005B9431 /* Defines.m */; };
+		30B0BA9716ACA0C4005B9431 /* XSSnake.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0BA9616ACA0C4005B9431 /* XSSnake.m */; };
+		30B0BA9B16ACA38B005B9431 /* XSVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0BA9A16ACA38B005B9431 /* XSVertex.m */; };
+		30B0BAA116ACA986005B9431 /* XSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0BAA016ACA986005B9431 /* XSHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30B0BA5916AC88BF005B9431 /* XSnake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSnake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B0BA5D16AC88BF005B9431 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		30B0BA5F16AC88BF005B9431 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		30B0BA6116AC88BF005B9431 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		30B0BA6516AC88BF005B9431 /* XSnake-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XSnake-Info.plist"; sourceTree = "<group>"; };
+		30B0BA6716AC88BF005B9431 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		30B0BA6916AC88BF005B9431 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30B0BA6B16AC88BF005B9431 /* XSnake-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XSnake-Prefix.pch"; sourceTree = "<group>"; };
+		30B0BA6C16AC88BF005B9431 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30B0BA6D16AC88BF005B9431 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30B0BA6F16AC88BF005B9431 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		30B0BA7116AC88BF005B9431 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		30B0BA7316AC88BF005B9431 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		30B0BA7D16AC8995005B9431 /* XSNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSNode.h; sourceTree = "<group>"; };
+		30B0BA7E16AC8995005B9431 /* XSNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSNode.m; sourceTree = "<group>"; };
+		30B0BA8116AC8A48005B9431 /* XSHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSHead.h; sourceTree = "<group>"; };
+		30B0BA8216AC8A48005B9431 /* XSHead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSHead.m; sourceTree = "<group>"; };
+		30B0BA8516AC8A8A005B9431 /* XSTail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSTail.h; sourceTree = "<group>"; };
+		30B0BA8616AC8A8A005B9431 /* XSTail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSTail.m; sourceTree = "<group>"; };
+		30B0BA8916AC8ACE005B9431 /* XSSnakeBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSSnakeBody.h; sourceTree = "<group>"; };
+		30B0BA8A16AC8ACE005B9431 /* XSSnakeBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSSnakeBody.m; sourceTree = "<group>"; };
+		30B0BA9116AC9908005B9431 /* XSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSHelper.h; sourceTree = "<group>"; };
+		30B0BA9216AC9970005B9431 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		30B0BA9316AC997E005B9431 /* Defines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Defines.m; sourceTree = "<group>"; };
+		30B0BA9516ACA0C4005B9431 /* XSSnake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSSnake.h; sourceTree = "<group>"; };
+		30B0BA9616ACA0C4005B9431 /* XSSnake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSSnake.m; sourceTree = "<group>"; };
+		30B0BA9916ACA38B005B9431 /* XSVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSVertex.h; sourceTree = "<group>"; };
+		30B0BA9A16ACA38B005B9431 /* XSVertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSVertex.m; sourceTree = "<group>"; };
+		30B0BAA016ACA986005B9431 /* XSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30B0BA5616AC88BF005B9431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B0BA5E16AC88BF005B9431 /* UIKit.framework in Frameworks */,
+				30B0BA6016AC88BF005B9431 /* Foundation.framework in Frameworks */,
+				30B0BA6216AC88BF005B9431 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30B0BA4E16AC88BF005B9431 = {
+			isa = PBXGroup;
+			children = (
+				30B0BA6316AC88BF005B9431 /* XSnake */,
+				30B0BA5C16AC88BF005B9431 /* Frameworks */,
+				30B0BA5A16AC88BF005B9431 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30B0BA5A16AC88BF005B9431 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30B0BA5916AC88BF005B9431 /* XSnake.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30B0BA5C16AC88BF005B9431 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30B0BA5D16AC88BF005B9431 /* UIKit.framework */,
+				30B0BA5F16AC88BF005B9431 /* Foundation.framework */,
+				30B0BA6116AC88BF005B9431 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30B0BA6316AC88BF005B9431 /* XSnake */ = {
+			isa = PBXGroup;
+			children = (
+				30B0BA8C16AC97EE005B9431 /* Common */,
+				30B0BA7A16AC8947005B9431 /* Model */,
+				30B0BA6C16AC88BF005B9431 /* AppDelegate.h */,
+				30B0BA6D16AC88BF005B9431 /* AppDelegate.m */,
+				30B0BA6416AC88BF005B9431 /* Supporting Files */,
+			);
+			path = XSnake;
+			sourceTree = "<group>";
+		};
+		30B0BA6416AC88BF005B9431 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30B0BA6516AC88BF005B9431 /* XSnake-Info.plist */,
+				30B0BA6616AC88BF005B9431 /* InfoPlist.strings */,
+				30B0BA6916AC88BF005B9431 /* main.m */,
+				30B0BA6B16AC88BF005B9431 /* XSnake-Prefix.pch */,
+				30B0BA6F16AC88BF005B9431 /* Default.png */,
+				30B0BA7116AC88BF005B9431 /* Default@2x.png */,
+				30B0BA7316AC88BF005B9431 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30B0BA7A16AC8947005B9431 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30B0BA9816ACA240005B9431 /* Vertex */,
+				30B0BA7B16AC8953005B9431 /* Snake */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30B0BA7B16AC8953005B9431 /* Snake */ = {
+			isa = PBXGroup;
+			children = (
+				30B0BA9516ACA0C4005B9431 /* XSSnake.h */,
+				30B0BA9616ACA0C4005B9431 /* XSSnake.m */,
+				30B0BA8816AC8AA7005B9431 /* SnakeBody */,
+				30B0BA8416AC8A7E005B9431 /* Tail */,
+				30B0BA8016AC8A38005B9431 /* Head */,
+				30B0BA7C16AC897E005B9431 /* Node */,
+			);
+			path = Snake;
+			sourceTree = "<group>";
+		};
+		30B0BA7C16AC897E005B9431 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				30B0BA7D16AC8995005B9431 /* XSNode.h */,
+				30B0BA7E16AC8995005B9431 /* XSNode.m */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		30B0BA8016AC8A38005B9431 /* Head */ = {
+			isa = PBXGroup;
+			children = (
+				30B0BA8116AC8A48005B9431 /* XSHead.h */,
+				30B0BA8216AC8A48005B9431 /* XSHead.m */,
+			);
+			path = Head;
+			sourceTree = "<group>";
+		};
+		30B0BA8416AC8A7E005B9431 /* Tail */ = {
+			isa = PBXGroup;
+			children = (
+				30B0BA8516AC8A8A005B9431 /* XSTail.h */,
+				30B0BA8616AC8A8A005B9431 /* XSTail.m */,
+			);
+			path = Tail;
+			sourceTree = "<group>";
+		};
+		30B0BA8816AC8AA7005B9431 /* SnakeBody */ = {
+			isa = PBXGroup;
+			children = (
+				30B0BA8916AC8ACE005B9431 /* XSSnakeBody.h */,
+				30B0BA8A16AC8ACE005B9431 /* XSSnakeBody.m */,
+			);
+			path = SnakeBody;
+			sourceTree = "<group>";
+		};
+		30B0BA8C16AC97EE005B9431 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				30B0BA9116AC9908005B9431 /* XSHelper.h */,
+				30B0BAA016ACA986005B9431 /* XSHelper.m */,
+				30B0BA9216AC9970005B9431 /* Defines.h */,
+				30B0BA9316AC997E005B9431 /* Defines.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		30B0BA9816ACA240005B9431 /* Vertex */ = {
+			isa = PBXGroup;
+			children = (
+				30B0BA9916ACA38B005B9431 /* XSVertex.h */,
+				30B0BA9A16ACA38B005B9431 /* XSVertex.m */,
+			);
+			name = Vertex;
+			path = ../Vertex;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30B0BA5816AC88BF005B9431 /* XSnake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30B0BA7716AC88BF005B9431 /* Build configuration list for PBXNativeTarget "XSnake" */;
+			buildPhases = (
+				30B0BA5516AC88BF005B9431 /* Sources */,
+				30B0BA5616AC88BF005B9431 /* Frameworks */,
+				30B0BA5716AC88BF005B9431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XSnake;
+			productName = XSnake;
+			productReference = 30B0BA5916AC88BF005B9431 /* XSnake.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30B0BA5016AC88BF005B9431 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XS;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = SP;
+			};
+			buildConfigurationList = 30B0BA5316AC88BF005B9431 /* Build configuration list for PBXProject "XSnake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 30B0BA4E16AC88BF005B9431;
+			productRefGroup = 30B0BA5A16AC88BF005B9431 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30B0BA5816AC88BF005B9431 /* XSnake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30B0BA5716AC88BF005B9431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B0BA6816AC88BF005B9431 /* InfoPlist.strings in Resources */,
+				30B0BA7016AC88BF005B9431 /* Default.png in Resources */,
+				30B0BA7216AC88BF005B9431 /* Default@2x.png in Resources */,
+				30B0BA7416AC88BF005B9431 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30B0BA5516AC88BF005B9431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B0BA6A16AC88BF005B9431 /* main.m in Sources */,
+				30B0BA6E16AC88BF005B9431 /* AppDelegate.m in Sources */,
+				30B0BA7F16AC8995005B9431 /* XSNode.m in Sources */,
+				30B0BA8316AC8A48005B9431 /* XSHead.m in Sources */,
+				30B0BA8716AC8A8A005B9431 /* XSTail.m in Sources */,
+				30B0BA8B16AC8ACE005B9431 /* XSSnakeBody.m in Sources */,
+				30B0BA9416AC997E005B9431 /* Defines.m in Sources */,
+				30B0BA9716ACA0C4005B9431 /* XSSnake.m in Sources */,
+				30B0BA9B16ACA38B005B9431 /* XSVertex.m in Sources */,
+				30B0BAA116ACA986005B9431 /* XSHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30B0BA6616AC88BF005B9431 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30B0BA6716AC88BF005B9431 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30B0BA7516AC88BF005B9431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30B0BA7616AC88BF005B9431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30B0BA7816AC88BF005B9431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XSnake/XSnake-Prefix.pch";
+				INFOPLIST_FILE = "XSnake/XSnake-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		30B0BA7916AC88BF005B9431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XSnake/XSnake-Prefix.pch";
+				INFOPLIST_FILE = "XSnake/XSnake-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30B0BA5316AC88BF005B9431 /* Build configuration list for PBXProject "XSnake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B0BA7516AC88BF005B9431 /* Debug */,
+				30B0BA7616AC88BF005B9431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30B0BA7716AC88BF005B9431 /* Build configuration list for PBXNativeTarget "XSnake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B0BA7816AC88BF005B9431 /* Debug */,
+				30B0BA7916AC88BF005B9431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30B0BA5016AC88BF005B9431 /* Project object */;
+}
