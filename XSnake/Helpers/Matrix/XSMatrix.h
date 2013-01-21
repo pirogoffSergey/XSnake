@@ -10,10 +10,6 @@
 
 @interface XSMatrix : NSObject
 
-@property (nonatomic, assign) int width;
-@property (nonatomic, assign) int height;
-
-
 - (id)initWithWidth:(int)width height:(int)height;
 - (int)objectAtRow:(int)rowIndex column:(int)columnIndex;
 - (void)writeObject:(int)elem atRow:(int)rowIndex column:(int)columnIndex;

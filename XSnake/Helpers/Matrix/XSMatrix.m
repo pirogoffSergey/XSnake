@@ -11,6 +11,8 @@
 
 @interface XSMatrix ()
 
+@property (nonatomic, assign) int width;
+@property (nonatomic, assign) int height;
 @property (nonatomic, strong) NSMutableArray *base; //keeps columns
 
 @end
@@ -41,12 +43,16 @@
 
 - (int)objectAtRow:(int)rowIndex column:(int)columnIndex
 {
+    [self checkRangeForRow:rowIndex column:columnIndex];
+    
     NSNumber *cell = [(NSArray *)[self.base objectAtIndex:columnIndex] objectAtIndex:rowIndex];
     return cell.intValue;
 }
 
 - (void)writeObject:(int)elem atRow:(int)rowIndex column:(int)columnIndex
 {
+    [self checkRangeForRow:rowIndex column:columnIndex];
+    
     NSMutableArray *column = (NSMutableArray *)[self.base objectAtIndex:columnIndex];
     [column replaceObjectAtIndex:rowIndex withObject:[NSNumber numberWithInt:elem]];
     [self.base replaceObjectAtIndex:columnIndex withObject:column];
@@ -57,8 +63,8 @@
     NSMutableString *result = [NSMutableString string];
     
     NSArray *col;
-    for(int i=0; i<self.base.count; i++) {
-        for(int j=0; j<self.base.count; j++) {
+    for(int i=0; i<self.height; i++) {
+        for(int j=0; j<self.width; j++) {
             col = [self.base objectAtIndex:j];
             [result appendFormat:@" %@", [col objectAtIndex:i]];
         }
@@ -84,6 +90,19 @@
         [matrix addObject:column];
     }
     return matrix;
+}
+
+- (BOOL)checkRangeForRow:(int)rowIndex column:(int)columnIndex
+{
+    if (rowIndex >= self.height) {
+        [NSException raise:@"XSMatrix exception" format:@"objectAtRow:(int)rowIndex column:(int)columnIndex error! \"rowIndex\" is out of range"];
+        return NO;
+    }
+    if(columnIndex >= self.width) {
+        [NSException raise:@"XSMatrix exception" format:@"objectAtRow:(int)rowIndex column:(int)columnIndex error! \"columnIndex\" is out of range"];
+        return NO;
+    }
+    return YES;
 }
 
 @end

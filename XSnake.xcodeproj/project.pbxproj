@@ -152,14 +152,11 @@
 		30B0BA6316AC88BF005B9431 /* XSnake */ = {
 			isa = PBXGroup;
 			children = (
+				302DC62C16ADB98700D15EC3 /* ViewConrtrollers */,
 				30F42AE816ADDF120081881B /* Helpers */,
 				302DC63416ADBB5F00D15EC3 /* GameController */,
-				302DC62C16ADB98700D15EC3 /* ViewConrtrollers */,
 				30B0BA8C16AC97EE005B9431 /* Common */,
 				30B0BA7A16AC8947005B9431 /* Model */,
-				30B0BA6C16AC88BF005B9431 /* AppDelegate.h */,
-				30B0BA6D16AC88BF005B9431 /* AppDelegate.m */,
-				302DC63216ADBA0200D15EC3 /* MainStoryboard.storyboard */,
 				30B0BA6416AC88BF005B9431 /* Supporting Files */,
 			);
 			path = XSnake;
@@ -168,6 +165,9 @@
 		30B0BA6416AC88BF005B9431 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				30B0BA6C16AC88BF005B9431 /* AppDelegate.h */,
+				30B0BA6D16AC88BF005B9431 /* AppDelegate.m */,
+				302DC63216ADBA0200D15EC3 /* MainStoryboard.storyboard */,
 				30B0BA6516AC88BF005B9431 /* XSnake-Info.plist */,
 				30B0BA6616AC88BF005B9431 /* InfoPlist.strings */,
 				30B0BA6916AC88BF005B9431 /* main.m */,
