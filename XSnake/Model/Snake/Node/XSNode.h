@@ -19,4 +19,7 @@
 
 - (void)move:(MoveDirection)direction;
 
+
+- (BOOL)isLocationEqualToPoint:(CGPoint)pt;
+
 @end

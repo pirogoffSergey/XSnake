@@ -17,6 +17,7 @@
 
 - (XSHead *)head;
 - (XSTail *)tail;
+- (NSArray *)allNodes;
 - (void)addNode;
 
 @end

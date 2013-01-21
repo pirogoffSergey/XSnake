@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="EUR-Fc-yvN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="xAC-QV-6et">
+            <objects>
+                <viewController storyboardIdentifier="mainViewStoryboardID" id="EUR-Fc-yvN" customClass="XSMainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fJ7-e5-B5z">
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWu-0v-mI9">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="467-wr-9yq"/>
+                                    <constraint firstAttribute="height" constant="42" id="p5F-Up-8SF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="&lt;-">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftAction:" destination="EUR-Fc-yvN" eventType="touchUpInside" id="sc9-Gh-ncw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfM-Ag-0w3">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="eS0-CN-8Bd"/>
+                                    <constraint firstAttribute="height" constant="42" id="r5h-y8-F0i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="up">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upAction:" destination="EUR-Fc-yvN" eventType="touchUpInside" id="uAR-Sp-Fck"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrM-zC-foZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="8UY-4u-umd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="down">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downAction:" destination="EUR-Fc-yvN" eventType="touchUpInside" id="hfY-kU-cSl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdk-xx-Kqz">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="SPd-Zg-ree"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="->">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightAction:" destination="EUR-Fc-yvN" eventType="touchUpInside" id="qRW-bc-4fg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qdk-xx-Kqz" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="5ZE-pe-ouw"/>
+                            <constraint firstItem="qdk-xx-Kqz" firstAttribute="bottom" secondItem="SWu-0v-mI9" secondAttribute="bottom" type="default" id="AJf-22-WdF"/>
+                            <constraint firstAttribute="bottom" secondItem="kfM-Ag-0w3" secondAttribute="bottom" constant="100" id="ClG-rr-qal"/>
+                            <constraint firstItem="qdk-xx-Kqz" firstAttribute="top" secondItem="SWu-0v-mI9" secondAttribute="top" type="default" id="Gwr-zC-b5d"/>
+                            <constraint firstAttribute="bottom" secondItem="SWu-0v-mI9" secondAttribute="bottom" constant="56" id="a2B-LA-71u"/>
+                            <constraint firstItem="IrM-zC-foZ" firstAttribute="trailing" secondItem="kfM-Ag-0w3" secondAttribute="trailing" type="default" id="cqS-uz-IfV"/>
+                            <constraint firstItem="IrM-zC-foZ" firstAttribute="leading" secondItem="kfM-Ag-0w3" secondAttribute="leading" type="default" id="emJ-gG-O12"/>
+                            <constraint firstAttribute="trailing" secondItem="SWu-0v-mI9" secondAttribute="trailing" constant="115" id="fwn-Ba-SPG"/>
+                            <constraint firstAttribute="bottom" secondItem="IrM-zC-foZ" secondAttribute="bottom" constant="12" id="iGf-zW-aBX"/>
+                            <constraint firstItem="qdk-xx-Kqz" firstAttribute="baseline" secondItem="SWu-0v-mI9" secondAttribute="baseline" type="default" id="o0D-FE-uMf"/>
+                            <constraint firstAttribute="trailing" secondItem="kfM-Ag-0w3" secondAttribute="trailing" constant="67" id="yRY-8c-dki"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSY-b2-Kad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="-92"/>
+        </scene>
+        <!--Field View Controller-->
+        <scene sceneID="mvw-bk-fM4">
+            <objects>
+                <viewController storyboardIdentifier="fieldStoryboardID" id="yC9-9h-Hwo" customClass="XSFieldViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2LR-wl-s2a">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="200"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.094117656349999995" green="0.80392163989999998" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLL-Rq-8F3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="-234"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="XSFieldViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/XSFieldViewController.h"/>
+        </class>
+        <class className="XSMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/XSMainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="downAction:"/>
+                <relationship kind="action" name="leftAction:"/>
+                <relationship kind="action" name="rightAction:"/>
+                <relationship kind="action" name="upAction:"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

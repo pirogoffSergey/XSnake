@@ -53,4 +53,14 @@
     }
 }
 
+- (BOOL)isLocationEqualToPoint:(CGPoint)pt
+{
+    if(self.location.x == pt.x && self.location.y == pt.y) {
+        return YES;
+    }
+    else {
+        return NO;
+    }
+}
+
 @end

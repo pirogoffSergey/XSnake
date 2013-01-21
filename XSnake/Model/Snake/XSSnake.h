@@ -17,7 +17,6 @@
 @property (nonatomic, strong) NSMutableArray *vertexes; //XSVertex(es)
 
 - (MoveDirection)currentMoveDirection;
-- (void)addVertex:(XSVertex *)vertex;
 - (void)move:(MoveDirection)direction;
 
 @end

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302DC63116ADB9B900D15EC3 /* XSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302DC63016ADB9B900D15EC3 /* XSMainViewController.m */; };
+		302DC63316ADBA0200D15EC3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302DC63216ADBA0200D15EC3 /* MainStoryboard.storyboard */; };
+		302DC63716ADBB7400D15EC3 /* XSGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302DC63616ADBB7400D15EC3 /* XSGameController.m */; };
+		302DC63F16ADBE5800D15EC3 /* XSFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302DC63E16ADBE5800D15EC3 /* XSFieldViewController.m */; };
 		30B0BA5E16AC88BF005B9431 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B0BA5D16AC88BF005B9431 /* UIKit.framework */; };
 		30B0BA6016AC88BF005B9431 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B0BA5F16AC88BF005B9431 /* Foundation.framework */; };
 		30B0BA6216AC88BF005B9431 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B0BA6116AC88BF005B9431 /* CoreGraphics.framework */; };
@@ -27,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		302DC62F16ADB9B900D15EC3 /* XSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSMainViewController.h; sourceTree = "<group>"; };
+		302DC63016ADB9B900D15EC3 /* XSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSMainViewController.m; sourceTree = "<group>"; };
+		302DC63216ADBA0200D15EC3 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		302DC63516ADBB7400D15EC3 /* XSGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSGameController.h; sourceTree = "<group>"; };
+		302DC63616ADBB7400D15EC3 /* XSGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSGameController.m; sourceTree = "<group>"; };
+		302DC63D16ADBE5800D15EC3 /* XSFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSFieldViewController.h; sourceTree = "<group>"; };
+		302DC63E16ADBE5800D15EC3 /* XSFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSFieldViewController.m; sourceTree = "<group>"; };
 		30B0BA5916AC88BF005B9431 /* XSnake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSnake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B0BA5D16AC88BF005B9431 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		30B0BA5F16AC88BF005B9431 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,6 +83,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		302DC62C16ADB98700D15EC3 /* ViewConrtrollers */ = {
+			isa = PBXGroup;
+			children = (
+				302DC63C16ADBE3400D15EC3 /* FieldViewController */,
+				302DC62E16ADB9A000D15EC3 /* Main */,
+			);
+			path = ViewConrtrollers;
+			sourceTree = "<group>";
+		};
+		302DC62E16ADB9A000D15EC3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				302DC62F16ADB9B900D15EC3 /* XSMainViewController.h */,
+				302DC63016ADB9B900D15EC3 /* XSMainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		302DC63416ADBB5F00D15EC3 /* GameController */ = {
+			isa = PBXGroup;
+			children = (
+				302DC63516ADBB7400D15EC3 /* XSGameController.h */,
+				302DC63616ADBB7400D15EC3 /* XSGameController.m */,
+			);
+			path = GameController;
+			sourceTree = "<group>";
+		};
+		302DC63C16ADBE3400D15EC3 /* FieldViewController */ = {
+			isa = PBXGroup;
+			children = (
+				302DC63D16ADBE5800D15EC3 /* XSFieldViewController.h */,
+				302DC63E16ADBE5800D15EC3 /* XSFieldViewController.m */,
+			);
+			path = FieldViewController;
+			sourceTree = "<group>";
+		};
 		30B0BA4E16AC88BF005B9431 = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +149,13 @@
 		30B0BA6316AC88BF005B9431 /* XSnake */ = {
 			isa = PBXGroup;
 			children = (
+				302DC63416ADBB5F00D15EC3 /* GameController */,
+				302DC62C16ADB98700D15EC3 /* ViewConrtrollers */,
 				30B0BA8C16AC97EE005B9431 /* Common */,
 				30B0BA7A16AC8947005B9431 /* Model */,
 				30B0BA6C16AC88BF005B9431 /* AppDelegate.h */,
 				30B0BA6D16AC88BF005B9431 /* AppDelegate.m */,
+				302DC63216ADBA0200D15EC3 /* MainStoryboard.storyboard */,
 				30B0BA6416AC88BF005B9431 /* Supporting Files */,
 			);
 			path = XSnake;
@@ -260,6 +310,7 @@
 				30B0BA7016AC88BF005B9431 /* Default.png in Resources */,
 				30B0BA7216AC88BF005B9431 /* Default@2x.png in Resources */,
 				30B0BA7416AC88BF005B9431 /* Default-568h@2x.png in Resources */,
+				302DC63316ADBA0200D15EC3 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +331,9 @@
 				30B0BA9716ACA0C4005B9431 /* XSSnake.m in Sources */,
 				30B0BA9B16ACA38B005B9431 /* XSVertex.m in Sources */,
 				30B0BAA116ACA986005B9431 /* XSHelper.m in Sources */,
+				302DC63116ADB9B900D15EC3 /* XSMainViewController.m in Sources */,
+				302DC63716ADBB7400D15EC3 /* XSGameController.m in Sources */,
+				302DC63F16ADBE5800D15EC3 /* XSFieldViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +444,7 @@
 				30B0BA7916AC88BF005B9431 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

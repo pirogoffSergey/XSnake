@@ -57,6 +57,11 @@
     [self addNodeToBody:newNode];
 }
 
+- (NSArray *)allNodes
+{
+    return self.body;
+}
+
 
 #pragma mark -
 #pragma mark Private Methods

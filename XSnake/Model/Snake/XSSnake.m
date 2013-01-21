@@ -10,6 +10,13 @@
 #import "XSHelper.h"
 
 
+@interface XSSnake ()
+
+- (void)addVertex:(XSVertex *)vertex;
+
+@end
+
+
 @implementation XSSnake
 
 - (id)init
@@ -51,6 +58,8 @@
 - (void)move:(MoveDirection)direction
 {
     if(self.currentMoveDirection == direction) {
+        
+        [self moveSnake];
         return; //already go this direction
     }
     
@@ -58,11 +67,33 @@
         return; //can't change direction to opposite
     }
     
-//    XSVertex *vertex = [[XSVertex alloc] initWithLocation:[self head].location direction:direction];
-//    [self addVertex:vertex];
-//    
-//    [[self head] move:direction];
+    XSVertex *vertex = [[XSVertex alloc] initWithLocation:[self head].location direction:direction];
+    [self addVertex:vertex];
     
+    [self moveSnake];
+}
+
+- (void)moveSnake
+{
+    XSVertex *vertex;
+    for(XSNode *node in self.snakeBody.allNodes) {
+        
+        vertex = [self isNodeOnVertex:node];
+        if(vertex) {
+            node.direction = vertex.direction;
+        }
+        [node move:node.direction];
+    }
+}
+
+- (XSVertex *)isNodeOnVertex:(XSNode *)node
+{
+    for(XSVertex *ver in self.vertexes) {
+        if([node isLocationEqualToPoint:ver.location]) {
+            return ver;
+        }
+    }
+    return nil;
 }
 
 @end
