@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XSSnake.h"
 
 @interface XSFieldViewController : UIViewController
+
+@property (nonatomic, strong) XSSnake *snake;
 
 @end
