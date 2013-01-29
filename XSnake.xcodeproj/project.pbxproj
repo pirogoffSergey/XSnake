@@ -28,6 +28,7 @@
 		30B0BA9716ACA0C4005B9431 /* XSSnake.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0BA9616ACA0C4005B9431 /* XSSnake.m */; };
 		30B0BA9B16ACA38B005B9431 /* XSVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0BA9A16ACA38B005B9431 /* XSVertex.m */; };
 		30B0BAA116ACA986005B9431 /* XSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0BAA016ACA986005B9431 /* XSHelper.m */; };
+		30C1208D16B828710095A516 /* XSGraphicsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C1208C16B828710095A516 /* XSGraphicsHelper.m */; };
 		30F42AED16ADDF3A0081881B /* XSMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F42AEC16ADDF3A0081881B /* XSMatrix.m */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,8 @@
 		30B0BA9916ACA38B005B9431 /* XSVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSVertex.h; sourceTree = "<group>"; };
 		30B0BA9A16ACA38B005B9431 /* XSVertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSVertex.m; sourceTree = "<group>"; };
 		30B0BAA016ACA986005B9431 /* XSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSHelper.m; sourceTree = "<group>"; };
+		30C1208B16B828710095A516 /* XSGraphicsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSGraphicsHelper.h; sourceTree = "<group>"; };
+		30C1208C16B828710095A516 /* XSGraphicsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSGraphicsHelper.m; sourceTree = "<group>"; };
 		30F42AEB16ADDF3A0081881B /* XSMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSMatrix.h; sourceTree = "<group>"; };
 		30F42AEC16ADDF3A0081881B /* XSMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSMatrix.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -258,9 +261,19 @@
 			path = ../Vertex;
 			sourceTree = "<group>";
 		};
+		30C1208916B828580095A516 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				30C1208B16B828710095A516 /* XSGraphicsHelper.h */,
+				30C1208C16B828710095A516 /* XSGraphicsHelper.m */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
 		30F42AE816ADDF120081881B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				30C1208916B828580095A516 /* Graphics */,
 				30F42AEA16ADDF260081881B /* Matrix */,
 			);
 			path = Helpers;
@@ -356,6 +369,7 @@
 				302DC63716ADBB7400D15EC3 /* XSGameController.m in Sources */,
 				302DC63F16ADBE5800D15EC3 /* XSFieldViewController.m in Sources */,
 				30F42AED16ADDF3A0081881B /* XSMatrix.m in Sources */,
+				30C1208D16B828710095A516 /* XSGraphicsHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

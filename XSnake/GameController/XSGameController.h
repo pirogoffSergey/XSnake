@@ -15,5 +15,6 @@
 @property (nonatomic, strong) XSSnake *snake;
 
 - (void)startGame;
+- (void)changeDirection:(MoveDirection)direction;
 
 @end

@@ -11,6 +11,7 @@
 @interface XSGameController ()
 
 @property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, assign) MoveDirection currentDurection;
 
 @end
 
@@ -22,6 +23,7 @@
     self = [super init];
     if(self) {
         self.snake = [[XSSnake alloc] init];
+        self.currentDurection = right;
     }
     return self;
 }
@@ -52,7 +54,8 @@
 
 - (void)tick
 {
-    NSLog(@"tick");
+//    NSLog(@"tick");
+    [self.snake move:self.currentDurection];
 }
 
 
@@ -61,7 +64,12 @@
 
 - (void)startGame
 {
-    
+    [self startTimer];
+}
+
+- (void)changeDirection:(MoveDirection)direction
+{
+    self.currentDurection = direction;
 }
 
 @end
